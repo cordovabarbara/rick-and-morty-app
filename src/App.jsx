@@ -1,8 +1,6 @@
 
 import './App.css'
-import CardLocation from './components/CardLocation';
 import PrincipalContent from './components/PrincipalContent';
-import ResidentCard from './components/ResidentCard';
 import useFetch from './hooks/useFetch'
 import randomLocation from './utils/RandomLocation';
 import { useRef, useState } from 'react';
@@ -25,9 +23,12 @@ function App() {
         <input ref={inputLocation} type="text"/>
           <button>Search</button>
       </form>
-      <PrincipalContent
-        getLocation={getLocation}
-        />
+      {
+        hasError
+        ? <h2>⚠️Hey! you must provide an id from 1 to 126😣</h2>
+        : <PrincipalContent getLocation={getLocation}/>
+      }
+      
     </div>
   )
 }
