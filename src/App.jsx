@@ -22,7 +22,7 @@ function App() {
       <h1>Rick and Morty</h1>
       <form onSubmit={handleSubmit}>
         <input ref={inputLocation} type="text"/>
-        <button>Search</button>
+          <button>Search</button>
       </form>
       <CardLocation location={getLocation} />
       <div>
