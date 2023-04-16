@@ -1,6 +1,7 @@
 
 import './App.css'
 import CardLocation from './components/CardLocation';
+import PrincipalContent from './components/PrincipalContent';
 import ResidentCard from './components/ResidentCard';
 import useFetch from './hooks/useFetch'
 import randomLocation from './utils/RandomLocation';
@@ -11,7 +12,7 @@ function App() {
   const [inputValue, setinputValue] = useState(randomLocation())
 
   const url = `https://rickandmortyapi.com/api/location/${inputValue}`
-  const getLocation = useFetch(url)
+  const [getLocation, hasError] = useFetch(url)
   const inputLocation = useRef()
   const handleSubmit = e => {e. preventDefault()
   setinputValue(inputLocation.current.value)}
@@ -24,17 +25,9 @@ function App() {
         <input ref={inputLocation} type="text"/>
           <button>Search</button>
       </form>
-      <CardLocation location={getLocation} />
-      <div>
-        {
-          getLocation?.residents.map(url => (
-            <ResidentCard
-              key={url}
-              url={url}
-            />
-          ))
-        }
-      </div>
+      <PrincipalContent
+        getLocation={getLocation}
+        />
     </div>
   )
 }

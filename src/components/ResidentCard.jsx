@@ -2,7 +2,7 @@ import useFetch from "../hooks/useFetch"
 
 const ResidentCard = ({url}) => {
 
-    const residents = useFetch(url)
+    const [residents] = useFetch(url)
 
     return (
     <div>
