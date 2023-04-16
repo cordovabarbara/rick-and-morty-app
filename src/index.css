@@ -3,6 +3,10 @@
 
 :root{
     --font: 'Cabin', sans-serif;
+    --color-bakground: #05292E;
+    --color-second: #7E7E7E;
+    --color-title: #FBFBFB;
+    --color-third: #B6D647;
 }
 
 
@@ -26,8 +30,14 @@ ul{
 
 input{
     outline: 0;
+    font-family: inherit;
+    border: 0;
 }
 
+button{
+    border: none;
+    font-family: inherit;
+}
 img{
     display: block;
     width: 100%;

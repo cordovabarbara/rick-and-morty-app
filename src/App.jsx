@@ -17,15 +17,15 @@ function App() {
   
 
   return (
-    <div className="App">
-      <h1>Rick and Morty</h1>
-      <form onSubmit={handleSubmit}>
-        <input ref={inputLocation} type="text"/>
-          <button>Search</button>
+    <div className="app">
+      <h1 className='app__title'>Rick and Morty</h1>
+      <form className='app__form' onSubmit={handleSubmit}>
+        <input className='app__input' ref={inputLocation} type="text"/>
+          <button className='app__btn'>Search</button>
       </form>
       {
         hasError
-        ? <h2>⚠️Hey! you must provide an id from 1 to 126😣</h2>
+        ? <h2 className='app__error'>⚠️Hey! you must provide an id from 1 to 126😣</h2>
         : <PrincipalContent getLocation={getLocation}/>
       }
       
