@@ -1,3 +1,4 @@
+import './Styles/CardLocation.css'
 
 const CardLocation = ({ location }) => {
   return (

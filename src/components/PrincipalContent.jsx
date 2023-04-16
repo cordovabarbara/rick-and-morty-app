@@ -1,12 +1,13 @@
 import CardLocation from "./CardLocation"
 import ResidentCard from "./ResidentCard"
+import './Styles/PrincipalContent.css'
 
 
 const PrincipalContent = ({getLocation}) => {
   return (
-<div>
+<>
     <CardLocation location={getLocation} />
-    <div>
+    <div className="principal__box">
         {
             getLocation?.residents.map(url => (
             <ResidentCard
@@ -16,7 +17,7 @@ const PrincipalContent = ({getLocation}) => {
         ))
         }
     </div>
-</div>
+</>
 )
 }
 
