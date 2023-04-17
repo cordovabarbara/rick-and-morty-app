@@ -11,15 +11,16 @@
 }
 
 .app__input{
-    padding: 0.4em 0.8em;
+    padding: 0.8rem 1.5rem;
     border-radius: 0.5em 0 0 0.5em;
-    
+    font-size: large;
 }
+
 
 .app__btn{
     border-radius: 0 0.5em 0.5em 0;
-    padding: 0 1em;
-    background-color:var(--color-third);
+    padding: 1rem 1.5rem;
+    background-color: var(--color-third);
     color: var(--color-title);
 }
 
@@ -27,4 +28,8 @@
     color: var(--color-title);
     padding-top: 1em;
     text-align: center;
+}
+
+::placeholder{
+    font-size: 16px;
 }

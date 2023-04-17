@@ -21,7 +21,7 @@ function App() {
     <div className="app">
     <img className='img__app' src={image3} alt='Rick and Morty'/>
       <form className='app__form' onSubmit={handleSubmit}>
-        <input className='app__input' ref={inputLocation} type="text" placeholder='Enter a number from 1 to 126'/>
+        <input className='app__input' ref={inputLocation} type="text" placeholder='enter a number from 1 to 126'/>
           <button className='app__btn'>Search</button>
       </form>
       {
