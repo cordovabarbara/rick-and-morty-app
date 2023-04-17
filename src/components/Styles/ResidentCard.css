@@ -1,7 +1,7 @@
 .resident{
     max-width: 320px;
     border-radius: 0.8em;
-    background-color: var(--color-bakground);
+    background-color: var( --color-background-card);
     overflow: hidden;
 }
 

@@ -1,0 +1,29 @@
+.location{
+    padding: 2em;
+    border-radius: 0.8em;
+    background-color: var(--color-background-card);
+    max-width: 500px;
+}
+
+.location__name{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-third);
+}
+
+.location__list{
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.location__item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: var(--color-second);
+}
+
+.location__info{
+    color: var(--color-title);
+}
