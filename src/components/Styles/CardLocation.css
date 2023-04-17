@@ -3,6 +3,10 @@
     border-radius: 0.8em;
     background-color: var(--color-background-card);
     max-width: 500px;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0.2em 0.2em 0.5em #000;
 }
 
 .location__name{
@@ -20,10 +24,13 @@
 .location__item{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5em;
     color: var(--color-second);
+    font-weight: 300;
 }
 
 .location__info{
     color: var(--color-title);
+    font-weight: 500;
 }
