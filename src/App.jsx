@@ -3,8 +3,9 @@ import './App.css'
 import PrincipalContent from './components/PrincipalContent';
 import useFetch from './hooks/useFetch'
 import randomLocation from './utils/randomLocation';
-import { useRef, useState } from 'react';
+import {useRef, useState } from 'react';
 import image3 from '/public/image3.webp'
+
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   const inputLocation = useRef()
   const handleSubmit = e => {e. preventDefault()
   setinputValue(inputLocation.current.value)}
-  
+
 
   return (
     <div className="app">
@@ -29,7 +30,6 @@ function App() {
         ? <h2 className='app__error'>⚠️Hey! you must provide an id from 1 to 126😣</h2>
         : <PrincipalContent getLocation={getLocation}/>
       }
-      
     </div>
   )
 }
