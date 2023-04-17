@@ -1,9 +1,7 @@
 .app{
     background-color: var(--color-bakground);
     min-height: 100vh;
-    
 }
-
 
 .app__form{
     display: flex;
