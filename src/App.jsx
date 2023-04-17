@@ -4,6 +4,7 @@ import PrincipalContent from './components/PrincipalContent';
 import useFetch from './hooks/useFetch'
 import randomLocation from './utils/RandomLocation';
 import { useRef, useState } from 'react';
+import image3 from '/public/image3.webp'
 
 function App() {
 
@@ -18,9 +19,9 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className='app__title'>Rick and Morty</h1>
+    <img className='img__app' src={image3} alt='Rick and Morty'/>
       <form className='app__form' onSubmit={handleSubmit}>
-        <input className='app__input' ref={inputLocation} type="text"/>
+        <input className='app__input' ref={inputLocation} type="text" placeholder='Enter a number from 1 to 126'/>
           <button className='app__btn'>Search</button>
       </form>
       {

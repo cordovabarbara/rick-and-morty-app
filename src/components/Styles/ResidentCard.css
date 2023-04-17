@@ -5,12 +5,11 @@
     overflow: hidden;
     box-shadow: 0.2em 0.2em 0.5em #000;
     transition: transform 200ms ease;
+    margin-bottom: 1em;
 }
-
 .resident:hover{
     transform: scale(1.05);
 }
-
 
 .resident__header{
     position: relative;
