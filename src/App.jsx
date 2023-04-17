@@ -2,7 +2,7 @@
 import './App.css'
 import PrincipalContent from './components/PrincipalContent';
 import useFetch from './hooks/useFetch'
-import randomLocation from './utils/RandomLocation';
+import randomLocation from './utils/randomLocation';
 import { useRef, useState } from 'react';
 import image3 from '/public/image3.webp'
 
